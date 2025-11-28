@@ -3,7 +3,7 @@ import z from "zod";
 
 dotenv.config();
 const envSchema = z.object({
-  PORT: z.string(),
+  PORT: z.string().optional(),
   CLUSTER_URL: z.string(),
   DATABASE_NAME: z.string(),
   JWT_SECRET: z.string(),
